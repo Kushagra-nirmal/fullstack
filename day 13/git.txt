@@ -1,0 +1,33 @@
+# Git repository adding to terminal 
+
+git init
+
+git status
+
+git config user.email "012345nirmal@gmail.com"
+
+git remote add origin https://github.com/Kushagra-nirmal/fullstack.git
+
+git config --list
+
+git remote -v
+
+git add .
+
+git status
+
+git commit -m "First File added"
+
+git branch -M main
+
+git push -u origin main 
+
+git revert commit_id
+
+git rm filename
+
+git revert --continue
+
+Commit pe click  kroge
+
+git push
