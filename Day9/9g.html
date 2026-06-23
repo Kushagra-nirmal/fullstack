@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ascending Numbers</title>
+</head>
+<body>
+
+<h2>Ascending Number Generator</h2>
+
+<label>Box A (Start): </label>
+<input type="number" id="boxA" value="1">
+
+<br><br>
+
+<label>Box B (End): </label>
+<input type="number" id="boxB" value="5">
+
+<br><br>
+
+<button onclick="showNumbers()">Show Ascending</button>
+
+<h3>Result:</h3>
+<p id="result"></p>
+
+<script>
+function showNumbers() {
+    let start = Number(document.getElementById("boxA").value);
+    let end = Number(document.getElementById("boxB").value);
+
+    let output = "";
+
+    if (start <= end) {
+        for (let i = start; i <= end; i++) {
+            output += i + " ";
+        }
+    } else {
+        output = "Please enter Box A smaller than Box B";
+    }
+
+    document.getElementById("result").innerHTML = output;
+}
+</script>
+
+</body>
+</html>

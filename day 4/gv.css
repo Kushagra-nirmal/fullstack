@@ -1,0 +1,23 @@
+/* div ,p{
+    background-color: antiquewhite;
+}
+
+Descendent Selector
+outer > p{
+    background-color: orange;
+}
+Child Selector 
+outer > p{
+    background-color: rgb(107, 10, 10);
+} */
+/* Adjecent Sibling Selector  */
+.outer{
+    border: 2px solid red;
+}
+/* Adjecent Sibling Selector  */
+h1 + p{
+    background-color: aqua;
+}
+h1 ~ p{
+    background-color: gray;
+}

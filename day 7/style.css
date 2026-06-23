@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("BlackOpsOne-Regular.ttf") format("truetype");
+}
+h1{
+    border: 20px solid rgba(49, 29, 29, 0.123);
+    box-shadow: 0px -10px 5px grey;
+    text-shadow: 3px 3px 5px rgb(83, 54, 54);
+    text-transform: uppercase;
+}
+div {
+    text-transform: capitalize;
+    font-size: 2em;
+    font-family: "MyFont", sans-serif;
+    line-height: 50px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!-- Tells browser this is an HTML5 document -->
+
+<html lang="en"> <!-- Starts HTML document, language is English -->
+
+<head> <!-- Head section starts -->
+
+    <meta charset="UTF-8"> <!-- Supports all common characters -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes page responsive on mobile devices -->
+
+    <title>Document</title> <!-- Browser tab title -->
+
+</head> <!-- Head section ends -->
+
+<body> <!-- Visible content starts -->
+
+    <script> <!-- JavaScript starts -->
+
+        // Function Declaration
+        function sum(x, y) {
+            console.log(x + y); // Prints sum
+            return x + y;       // Returns sum
+        }
+
+        sum(11, 22); // Calls function → Output: 33
+
+        // Function Expression
+        let add = function(a, b) {
+            console.log(a + b); // Prints sum
+            return a + b;       // Returns sum
+        };
+
+        add(11, 22); // Calls function → Output: 33
+
+        // Arrow Function
+        let jodna = (a, b) => {
+            console.log(a + b); // Prints sum
+            return a + b;       // Returns sum
+        };
+
+        // Short Arrow Function
+        let adarsh = (a, b) => a + b;
+
+        let result = adarsh(22, 33); // result = 55
+
+        console.log(adarsh(88, 99)); // Output: 187
+
+    </script> <!-- JavaScript ends -->
+
+</body> <!-- Body ends -->
+
+</html> <!-- HTML document ends -->

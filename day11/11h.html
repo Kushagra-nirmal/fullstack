@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Copy Example</title>
+</head>
+<body>
+    <script>
+        let user = {
+            name: "Nirmal",
+            rollno: 38,
+            course: "B.Tech",
+            address: {
+                area: "Sajanwa",
+                City: "Gorakhpur",
+                state: "Uttar Pradesh"
+            }
+        };
+
+        // Reference Copy
+        let user1 = user;
+        user1.name = "Nirmal Sharma";
+
+        console.log("user1:", user1);
+        console.log("user :", user);
+
+        // Shallow Copy
+        let user2 = {
+            ...user
+        };
+
+        user2.name = "Nirmal Dost";
+
+        console.log("user2:", user2);
+        console.log("user :", user);
+
+        // Nested object change affects both user and user2
+        user.address.City = "Khushinagar";
+
+        console.log("user2:", user2);
+        console.log("user :", user);
+
+        // Deep Copy using JSON
+        let temp = JSON.stringify(user);
+        let user3 = JSON.parse(temp);
+
+        user3.address.City = "Agra";
+
+        console.log("user3:", user3);
+        console.log("user :", user);
+
+        // Deep Copy using structuredClone
+        let user4 = structuredClone(user);
+
+        user4.address.City = "Andhra Pradesh";
+
+        console.log("user4:", user4);
+        console.log("user :", user);
+    </script>
+</body>
+</html>

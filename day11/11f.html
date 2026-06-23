@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Object Example</title>
+</head>
+<body>
+    <script>
+        let student = {
+            name: "Aashik",
+            course: "Diploma",
+            semester: 4,
+            rollno: 32,          // Missing comma added here
+            city_1: "Khushinagar",
+            city_2: "Gorakhpur"
+        };
+
+        console.log(student); // Print object
+
+        console.log(student.name); // Access name property
+
+        student.name = "Ashik Mansuri"; // Update name
+        console.log(student);
+
+        student.semester = 5; // Update semester
+
+        student.city = "Khushinagar"; // Add new property
+        console.log(student);
+
+        student.city = "Gorakhpur"; // Update city
+        console.log(student);
+
+        delete student.semester; // Delete semester property
+        console.log(student);
+    </script>
+</body>
+</html>
